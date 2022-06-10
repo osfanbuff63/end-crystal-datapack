@@ -37,7 +37,7 @@ jobs:
              data/
              pack.mcmeta
              pack.png
-         name: muffinhunt-datapack v2.0.0
+         name: end-crystal-datapack v1.0.0
 
          
    upload-optimized-datapack:
@@ -55,7 +55,7 @@ jobs:
      - name: Download normal pack
        uses: actions/download-artifact@076f0f7dd036d87e8e04f5f00d614e790308961b
        with:
-         name: muffinhunt-datapack v2.0.0
+         name: end-crystal-datapack v1.0.0
          path: ./
      - name: Run PackSquash
        uses: ComunidadAylas/PackSquash-action@81cb5e16d063527f982f94af93b8c703b206442d
@@ -66,7 +66,7 @@ jobs:
           validate_pack_metadata_file: true
           allow_optifine_mod: true
           delete_bloat_json_keys: true
-          artifact_name: 'optimized-muffinhunt-datapack v2.0.0'
+          artifact_name: 'optimized-end-crystal-datapack v1.0.0'
           never_store_squash_times: true
 
    create-release:
@@ -95,19 +95,19 @@ jobs:
        - name: Download normal pack
          uses: actions/download-artifact@076f0f7dd036d87e8e04f5f00d614e790308961b
          with:
-           name: muffinhunt-datapack v2.0.0
+           name: end-crystal-datapack v1.0.0
        - name: Zip pack
-         run: zip 'muffinhunt-datapack v2.0.0' -r data pack.mcmeta pack.png
+         run: zip 'end-crystal-datapack v1.0.0' -r data pack.mcmeta pack.png
        - name: Delete datapack
          run: rm -r data pack.mcmeta pack.png  
        - name: Download optimized pack
          uses: actions/download-artifact@076f0f7dd036d87e8e04f5f00d614e790308961b
          with:
-           name: optimized-muffinhunt-datapack v2.0.0
+           name: optimized-end-crystal-datapack v1.0.0
        - name: Zip optimized pack
          run: |
            unzip -f pack.zip
-           zip -r 'optimized-muffinhunt-datapack v2.0.0-alpha2' . -i data pack.mcmeta pack.png
+           zip -r 'optimized-end-crystal-datapack v1.0.0-alpha2' . -i data pack.mcmeta pack.png
        - name: Release
          uses: softprops/action-gh-release@50195ba7f6f93d1ac97ba8332a178e008ad176aa
          with:
