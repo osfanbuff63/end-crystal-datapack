@@ -10,4 +10,5 @@
   "labels": ["dependencies"],
   "commitMessagePrefix": "chore: deps: ",
   "rebaseWhen": "conflicted"
+  "bumpVersion": "patch"
 }
