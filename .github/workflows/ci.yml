@@ -25,7 +25,7 @@ jobs:
         if: github.event_name == 'pull_request'
         uses: actions/dependency-review-action@23d1ffffb6fa5401173051ec21eba8c35242733f
       - name: Check commands
-        uses: mcbeet/check-commands@740e5fb3c385a5a5775f9ab6c963745200cb71aa
+        uses: mcbeet/check-commands@03cff79228a0a50fe6856becd7972112e326e922
         with:
           source: .
           minecraft: 1.18
