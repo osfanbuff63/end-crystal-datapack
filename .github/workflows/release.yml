@@ -109,7 +109,7 @@ jobs:
            unzip -f pack.zip
            zip -r 'optimized-end-crystal-datapack v1.0.0' . -i data pack.mcmeta 
        - name: Release
-         uses: softprops/action-gh-release@1e07f4398721186383de40550babbdf2b84acfc5
+         uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844
          with:
            files: |
              *.zip
