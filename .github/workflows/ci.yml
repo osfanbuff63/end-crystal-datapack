@@ -32,7 +32,7 @@ jobs:
       - name: Check JSON
         uses: ocular-d/json-linter@7d3716a34bcd6fcc5b3b38141a21b9e02da6531d
       - name: Compile and upload
-        uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8
+        uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce
         with:
           name: muffinhunt-datapack v2.0.0-SNAPSHOT
           path: |
