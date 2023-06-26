@@ -58,7 +58,7 @@ jobs:
          name: end-crystal-datapack v1.0.0
          path: ./
      - name: Run PackSquash
-       uses: ComunidadAylas/PackSquash-action@cdeba7365a1491b436b1a9c381d63b5ee6c27f2e
+       uses: ComunidadAylas/PackSquash-action@9524148bab2c249b2bdcf18b8e80222786575c0f
        with:
           path: ./
           token: ${{ secrets.GITHUB_TOKEN }}
