@@ -14,7 +14,7 @@ jobs:
       with:
         egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
 
-    - uses: actions/first-interaction@bd33205aa5c96838e10fd65df0d01efd613677c1
+    - uses: actions/first-interaction@1dbfe1ba5525b8257e1f259b09745bee346d62d8
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: 'Welcome to the repository! Make sure to read the README.md specifically the Contributing section, before continuing, if you have not already!'
